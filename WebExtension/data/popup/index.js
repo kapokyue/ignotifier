@@ -373,7 +373,7 @@ new Listen('refresh', 'click', () => chrome.runtime.sendMessage({
 }));
 new Listen('gmail', 'click', () => chrome.runtime.sendMessage({
   method: 'open',
-  url: selected.parent.xml.link
+  url: selected.parent.xml.rootLink
 }, () => window.close()));
 new Listen('settings', 'click', () => chrome.tabs.update({
   url: '/data/options/index.html'
